@@ -1,3 +1,4 @@
 ## MegaFon Frontend Presets
 
-[Prettier](prettier/README.md) - подключение конфига `prettier` к проекту
+[eslint](eslint/README.md) - подключение `eslint`
+[Prettier](prettier/README.md) - подключение `prettier`

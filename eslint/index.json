@@ -1,0 +1,207 @@
+{
+  "plugins": [
+    "import",
+    "react"
+  ],
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    }
+  },
+  "rules": {
+    "brace-style": [
+      "error"
+    ],
+    "curly": [
+      "error"
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "consistent": true
+      }
+    ],
+    "no-console": [
+      "error"
+    ],
+    "no-alert": [
+      "error"
+    ],
+    "space-before-blocks": [
+      "error",
+      "always"
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "newline-before-return": [
+      "error"
+    ],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      },
+      {
+        "selector": "LabeledStatement",
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "padded-blocks": [
+      "error",
+      {
+        "blocks": "never",
+        "classes": "never",
+        "switches": "never"
+      }
+    ],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "id-match": [
+      "error",
+      "^[^а-яА-Я]+$",
+      {
+        "properties": true
+      }
+    ],
+    "func-names": [
+      "error",
+      "always"
+    ],
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true,
+        "enforceConst": true
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/no-multi-comp": [
+      "error"
+    ],
+    "react/prefer-stateless-function": [
+      "error"
+    ],
+    "react/no-unsafe": [
+      "error"
+    ],
+    "react/jsx-indent": [
+      "error",
+      4
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      4
+    ],
+    "react/no-danger": [
+      "off"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "react/static-property-placement": [
+      "off"
+    ],
+    "react/jsx-fragments": [
+      "error",
+      "syntax"
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "react/require-default-props": [
+      "off"
+    ],
+    "react/default-props-match-prop-types": [
+      "off"
+    ],
+    "@typescript-eslint/no-empty-function": [
+      "error"
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "error"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "never"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "ignorePackages": true,
+        "pattern": {
+          "ts": "never",
+          "tsx": "never"
+        }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error"
+    ]
+  }
+}
