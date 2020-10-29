@@ -64,3 +64,15 @@ module.exports = {
   semi: false,
 };
 ```
+
+## Release
+
+Run one of the following commands:
+
+```
+yarn release --patch
+yarn release --minor
+yarn release --major
+```
+
+Then push changes with created tag. Github Actions will publish new package to npm.
