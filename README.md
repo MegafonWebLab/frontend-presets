@@ -70,9 +70,9 @@ module.exports = {
 Run one of the following commands:
 
 ```
-yarn version --patch
-yarn version --minor
-yarn version --major
+yarn release --patch
+yarn release --minor
+yarn release --major
 ```
 
-Then commit and push changes with created tag. Github Actions will publish new package to npm.
+Then push changes with created tag. Github Actions will publish new package to npm.
