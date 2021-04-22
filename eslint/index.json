@@ -99,7 +99,6 @@
         "allowShortCircuit": true
       }
     ],
-    "no-use-before-define": "off",
     "no-shadow": "off",
     "id-match": [
       "error",
@@ -170,6 +169,7 @@
     "react/default-props-match-prop-types": [
       "off"
     ],
+    "no-use-before-define": "off",
     "@typescript-eslint/no-empty-function": [
       "error"
     ],
