@@ -99,7 +99,6 @@
         "allowShortCircuit": true
       }
     ],
-    "no-shadow": "off",
     "id-match": [
       "error",
       "^[^а-яА-Я]+$",
@@ -169,7 +168,6 @@
     "react/default-props-match-prop-types": [
       "off"
     ],
-    "no-use-before-define": "off",
     "@typescript-eslint/no-empty-function": [
       "error"
     ],
@@ -195,9 +193,11 @@
         }
       }
     ],
+    "no-shadow": "off",
     "@typescript-eslint/no-shadow": [
       "error"
     ],
+    "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
     ],
