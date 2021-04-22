@@ -193,6 +193,14 @@
         }
       }
     ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
     "import/order": [
       "error",
       {
@@ -219,7 +227,21 @@
       }
     ],
     "import/no-extraneous-dependencies": [
-      "error"
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.test.js",
+          "**/*.test.jsx"
+        ]
+      }
+    ],
+    "import/no-useless-path-segments": [
+      "error",
+      {
+        "noUselessIndex": true
+      }
     ]
   }
 }
