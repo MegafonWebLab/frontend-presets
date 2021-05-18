@@ -1,13 +1,13 @@
 # MegaFon Frontend Presets
 
-Сборник конфигураций для проектов сайта.
+Collection of tools configuration.
 
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@megafon/frontend-presets/latest?label=%40megafon%2Ffrontend-presets)](https://www.npmjs.com/package/@megafon/frontend-presets)
 [![Github Actions](https://github.com/MegafonWebLab/frontend-presets/workflows/auto%20publish%20ci/badge.svg)](https://github.com/MegafonWebLab/frontend-presets/actions)
 
-## Установка
+## Installation
 
-Зависимости:
+Dependencies:
 
 - stylelint
 - stylelint-order
@@ -23,19 +23,17 @@
 - eslint-plugin-react
 - eslint-plugin-react-hooks
 
-Установка одной строкой:
-
-```
-npm install --save-dev @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.22.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
+```bash
+$ npm install --save-dev @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.22.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
 ```
 
-```
-yarn add -D @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.21.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
+```bash
+$ yarn add -D @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.21.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
 ```
 
 ## eslint
 
-**Добавить в `package.json`**:
+**Add to `package.json`**:
 
 ```jsonc
 "eslintConfig": {
@@ -44,9 +42,9 @@ yarn add -D @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript
 },
 ```
 
-или
+or
 
-**Создать `.eslintrc.js`** и добавить:
+**Create `.eslintrc.js`**:
 
 ```js
 module.exports = {
@@ -56,7 +54,8 @@ module.exports = {
 
 ## stylelint
 
-**Создать `.stylelintrc.json`** и добавить
+**Create `.stylelintrc.json`**:
+
 ```json
 {
   "extends": "@megafon/frontend-presets/stylelint"
@@ -65,7 +64,7 @@ module.exports = {
 
 ## prettier
 
-**Изменить `package.json`**:
+**Change `package.json`**:
 
 ```jsonc
 {
@@ -74,9 +73,9 @@ module.exports = {
 }
 ```
 
-или
+or
 
-**Создать `.prettierrc.js`** и записать:
+**Create `.prettierrc.js`**:
 
 ```js
 module.exports = {
@@ -85,14 +84,18 @@ module.exports = {
 };
 ```
 
-## Релиз
+## Release
 
-Выполнить одну из следующих комманд:
+There are multiple commands to make a release:
 
+```bash
+$ yarn release --patch
+$ yarn release --minor
+$ yarn release --major
 ```
-yarn release --patch
-yarn release --minor
-yarn release --major
-```
 
-Затем пушните изменения с созданным тегом. Github Actions опубликует новый пакет в npm.
+After executing it, a new tag is created. When it's pushed, `Github Actions` will publish a new package to npm automatically.
+
+## Contributing
+
+Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
