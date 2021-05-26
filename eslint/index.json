@@ -27,6 +27,9 @@
     }
   },
   "rules": {
+    "arrow-body-style": [
+      "error"
+    ],
     "brace-style": [
       "error"
     ],
