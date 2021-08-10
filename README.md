@@ -44,11 +44,32 @@ yarn add -D @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript
 
 or
 
+**Add to `.eslintrc.json`**:
+
+```json
+{
+    // ...
+    "extends": "./node_modules/@megafon/frontend-presets/eslint",
+}
+```
+
+> NOTE: It's important to add this extend at the end of existing extends on your project in order to override previously extended rules
+
+```json
+"extends": [
+  "foo",
+  "plugin:bar/recommended",
+  "./node_modules/@megafon/frontend-presets/eslint"
+]
+```
+
+or
+
 **Create `.eslintrc.js`**:
 
 ```js
 module.exports = {
-  ...require("@megafon/frontend-presets/eslint"),
+  ...require('@megafon/frontend-presets/eslint'),
 };
 ```
 
@@ -79,7 +100,8 @@ or
 
 ```js
 module.exports = {
-  ...require("@megafon/frontend-presets/prettier"),
+  ...require('@megafon/frontend-presets/prettier'),
+  // overrides
   semi: false,
 };
 ```
