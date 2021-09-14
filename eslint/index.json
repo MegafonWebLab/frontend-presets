@@ -20,22 +20,13 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     }
   },
   "rules": {
-    "arrow-body-style": [
-      "error"
-    ],
-    "brace-style": [
-      "error"
-    ],
-    "curly": [
-      "error"
-    ],
+    "arrow-body-style": "error",
+    "brace-style": "error",
+    "curly": "error",
     "object-curly-newline": [
       "error",
       {
@@ -43,16 +34,9 @@
         "consistent": true
       }
     ],
-    "no-console": [
-      "error"
-    ],
-    "no-alert": [
-      "error"
-    ],
-    "space-before-blocks": [
-      "error",
-      "always"
-    ],
+    "no-console": "error",
+    "no-alert": "error",
+    "space-before-blocks": ["error", "always"],
     "no-multi-spaces": [
       "error",
       {
@@ -66,10 +50,7 @@
         "maxBOF": 0
       }
     ],
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
+    "arrow-parens": ["error", "as-needed"],
     "newline-before-return": [
       "error"
     ],
@@ -109,10 +90,7 @@
         "properties": true
       }
     ],
-    "func-names": [
-      "error",
-      "always"
-    ],
+    "func-names": ["error", "always"],
     "no-magic-numbers": [
       "error",
       {
@@ -127,32 +105,14 @@
         "allowForLoopAfterthoughts": true
       }
     ],
-    "react/no-multi-comp": [
-      "error"
-    ],
-    "react/prefer-stateless-function": [
-      "error"
-    ],
-    "react/no-unsafe": [
-      "error"
-    ],
-    "react/jsx-indent": [
-      "error",
-      4
-    ],
-    "react/jsx-indent-props": [
-      "error",
-      4
-    ],
-    "react/no-danger": [
-      "off"
-    ],
-    "react/prop-types": [
-      "off"
-    ],
-    "react/static-property-placement": [
-      "off"
-    ],
+    "react/no-multi-comp": "error",
+    "react/prefer-stateless-function": "error",
+    "react/no-unsafe": "error",
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/no-danger": "off",
+    "react/prop-types": "off",
+    "react/static-property-placement": "off",
     "react/jsx-fragments": [
       "error",
       "syntax"
@@ -160,23 +120,13 @@
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".tsx"
-        ]
+        "extensions": [".tsx"]
       }
     ],
-    "react/require-default-props": [
-      "off"
-    ],
-    "react/default-props-match-prop-types": [
-      "off"
-    ],
-    "@typescript-eslint/no-empty-function": [
-      "error"
-    ],
-    "@typescript-eslint/explicit-module-boundary-types": [
-      "error"
-    ],
+    "react/require-default-props": "off",
+    "react/default-props-match-prop-types": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -202,13 +152,9 @@
       }
     ],
     "no-shadow": "off",
-    "@typescript-eslint/no-shadow": [
-      "error"
-    ],
+    "@typescript-eslint/no-shadow": "error",
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
+    "@typescript-eslint/no-use-before-define": "error",
     "no-duplicate-imports": [
       "error",
       {
@@ -266,13 +212,13 @@
     {
         "files": ["*.ts", "*.js"],
         "rules": {
-            "import/prefer-default-export": ["off"]
+            "import/prefer-default-export": "off"
         }
     },
     {
         "files": ["*.test.ts", "*.test.tsx", "*.test.js", "*.test.jsx"],
         "rules": {
-            "no-magic-numbers": ["off"]
+            "no-magic-numbers": "off"
         }
     }
   ]
