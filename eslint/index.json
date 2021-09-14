@@ -171,6 +171,9 @@
     "react/default-props-match-prop-types": [
       "off"
     ],
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
     "@typescript-eslint/no-empty-function": [
       "error"
     ],
@@ -261,5 +264,19 @@
         "noUselessIndex": true
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+        "files": ["*.ts", "*.js"],
+        "rules": {
+            "import/prefer-default-export": ["off"]
+        }
+    },
+    {
+        "files": ["*.test.ts", "*.test.tsx", "*.test.js"],
+        "rules": {
+            "no-magic-numbers": ["off"]
+        }
+    }
+  ]
 }
