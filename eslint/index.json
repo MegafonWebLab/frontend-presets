@@ -20,174 +20,10 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     }
   },
   "rules": {
-    "arrow-body-style": [
-      "error"
-    ],
-    "brace-style": [
-      "error"
-    ],
-    "curly": [
-      "error"
-    ],
-    "object-curly-newline": [
-      "error",
-      {
-        "multiline": true,
-        "consistent": true
-      }
-    ],
-    "no-console": [
-      "error"
-    ],
-    "no-alert": [
-      "error"
-    ],
-    "space-before-blocks": [
-      "error",
-      "always"
-    ],
-    "no-multi-spaces": [
-      "error",
-      {
-        "ignoreEOLComments": true
-      }
-    ],
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxBOF": 0
-      }
-    ],
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
-    "newline-before-return": [
-      "error"
-    ],
-    "no-restricted-syntax": [
-      "error",
-      {
-        "selector": "ForInStatement",
-        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
-      },
-      {
-        "selector": "LabeledStatement",
-        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
-      },
-      {
-        "selector": "WithStatement",
-        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
-      }
-    ],
-    "padded-blocks": [
-      "error",
-      {
-        "blocks": "never",
-        "classes": "never",
-        "switches": "never"
-      }
-    ],
-    "no-unused-expressions": [
-      "error",
-      {
-        "allowShortCircuit": true
-      }
-    ],
-    "id-match": [
-      "error",
-      "^[^а-яА-Я]+$",
-      {
-        "properties": true
-      }
-    ],
-    "func-names": [
-      "error",
-      "always"
-    ],
-    "no-magic-numbers": [
-      "error",
-      {
-        "ignoreArrayIndexes": true,
-        "ignoreDefaultValues": true,
-        "enforceConst": true
-      }
-    ],
-    "no-plusplus": [
-      "error",
-      {
-        "allowForLoopAfterthoughts": true
-      }
-    ],
-    "react/no-multi-comp": [
-      "error"
-    ],
-    "react/prefer-stateless-function": [
-      "error"
-    ],
-    "react/no-unsafe": [
-      "error"
-    ],
-    "react/jsx-indent": [
-      "error",
-      4
-    ],
-    "react/jsx-indent-props": [
-      "error",
-      4
-    ],
-    "react/no-danger": [
-      "off"
-    ],
-    "react/prop-types": [
-      "off"
-    ],
-    "react/static-property-placement": [
-      "off"
-    ],
-    "react/jsx-fragments": [
-      "error",
-      "syntax"
-    ],
-    "react/jsx-filename-extension": [
-      "error",
-      {
-        "extensions": [
-          ".tsx"
-        ]
-      }
-    ],
-    "react/require-default-props": [
-      "off"
-    ],
-    "react/default-props-match-prop-types": [
-      "off"
-    ],
-    "@typescript-eslint/no-empty-function": [
-      "error"
-    ],
-    "@typescript-eslint/explicit-module-boundary-types": [
-      "error"
-    ],
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        "selector": "interface",
-        "format": ["PascalCase"],
-        "custom": {
-          "regex": "^I[A-Z]",
-          "match": true
-        }
-      }
-    ],
     "@typescript-eslint/ban-types": [
       "error",
       {
@@ -201,36 +37,31 @@
         }
       }
     ],
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": [
-      "error"
-    ],
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
-    "no-duplicate-imports": [
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/naming-convention": [
       "error",
       {
-        "includeExports": true
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
       }
     ],
-    "import/order": [
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/no-use-before-define": "error",
+    "arrow-body-style": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "brace-style": "error",
+    "curly": "error",
+    "func-names": ["error", "always"],
+    "id-match": [
       "error",
+      "^[^а-яА-Я]+$",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        },
-        "newlines-between": "never"
+        "properties": true
       }
     ],
     "import/extensions": [
@@ -260,6 +91,133 @@
       {
         "noUselessIndex": true
       }
-    ]
-  }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "newlines-between": "never"
+      }
+    ],
+    "newline-before-return": "error",
+    "no-alert": "error",
+    "no-console": "error",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "no-magic-numbers": [
+      "error",
+      {
+        "ignoreArrayIndexes": true,
+        "ignoreDefaultValues": true,
+        "enforceConst": true
+      }
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      },
+      {
+        "selector": "LabeledStatement",
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "no-shadow": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "no-use-before-define": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "consistent": true
+      }
+    ],
+    "padded-blocks": [
+      "error",
+      {
+        "blocks": "never",
+        "classes": "never",
+        "switches": "never"
+      }
+    ],
+    "react/default-props-match-prop-types": "off",
+    "react/jsx-fragments": [
+      "error",
+      "syntax"
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-indent": ["error", 4],
+    "react/no-danger": "off",
+    "react/no-multi-comp": "error",
+    "react/no-unsafe": "error",
+    "react/prefer-stateless-function": "error",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/static-property-placement": "off",
+    "space-before-blocks": ["error", "always"]
+  },
+  "overrides": [
+    {
+        "files": ["*.ts", "*.js"],
+        "rules": {
+            "import/prefer-default-export": "off"
+        }
+    },
+    {
+        "files": ["*.test.ts", "*.test.tsx", "*.test.js", "*.test.jsx"],
+        "rules": {
+            "no-magic-numbers": "off"
+        }
+    }
+  ]
 }
