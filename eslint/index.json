@@ -128,6 +128,7 @@
     "no-magic-numbers": [
       "error",
       {
+        "ignore": [-1, 0, 1],
         "ignoreArrayIndexes": true,
         "ignoreDefaultValues": true,
         "enforceConst": true
@@ -222,7 +223,8 @@
     {
         "files": ["*.test.ts", "*.test.tsx", "*.test.js", "*.test.jsx"],
         "rules": {
-            "no-magic-numbers": "off"
+            "no-magic-numbers": "off",
+            "react/jsx-props-no-spreading": "off"
         }
     }
   ]
