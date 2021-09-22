@@ -109,11 +109,19 @@
           "sibling",
           "index"
         ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
         },
-        "newlines-between": "never"
+        "newlines-between": "ignore"
       }
     ],
     "newline-before-return": "error",
