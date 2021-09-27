@@ -1,6 +1,6 @@
 {
   "name": "@megafon/frontend-presets",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "repository": "git@github.com:MegafonWebLab/frontend-presets.git",
   "license": "MIT",
   "publishConfig": {
