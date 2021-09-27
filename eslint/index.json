@@ -231,7 +231,7 @@
       "files": ["*.ts", "*.tsx"],
       "rules": {
         "no-duplicate-imports": "off",
-        "@typescipt-eslint/no-duplicate-imports": [
+        "@typescript-eslint/no-duplicate-imports": [
           "error", {
             "includeExports": true
           }
