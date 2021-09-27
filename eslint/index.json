@@ -49,12 +49,6 @@
         }
       }
     ],
-    "@typescript-eslint/no-duplicate-imports": [
-      "error",
-      {
-        "includeExports": true
-      }
-    ],
     "@typescript-eslint/no-empty-function": "error",
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-use-before-define": "error",
@@ -133,7 +127,11 @@
     "newline-before-return": "error",
     "no-alert": "error",
     "no-console": "error",
-    "no-duplicate-imports": "off",
+    "no-duplicate-imports": [
+      "error", {
+        "includeExports": true
+      }
+    ],
     "no-magic-numbers": [
       "error",
       {
@@ -228,6 +226,17 @@
         "rules": {
             "import/prefer-default-export": "off"
         }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-duplicate-imports": "off",
+        "@typescipt-eslint/no-duplicate-imports": [
+          "error", {
+            "includeExports": true
+          }
+        ]
+      }
     },
     {
         "files": ["*.test.ts", "*.test.tsx", "*.test.js", "*.test.jsx"],
