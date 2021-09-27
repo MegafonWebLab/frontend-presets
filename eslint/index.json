@@ -49,6 +49,12 @@
         }
       }
     ],
+    "@typescript-eslint/no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
     "@typescript-eslint/no-empty-function": "error",
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-use-before-define": "error",
@@ -127,12 +133,7 @@
     "newline-before-return": "error",
     "no-alert": "error",
     "no-console": "error",
-    "no-duplicate-imports": [
-      "error",
-      {
-        "includeExports": true
-      }
-    ],
+    "no-duplicate-imports": "off",
     "no-magic-numbers": [
       "error",
       {
