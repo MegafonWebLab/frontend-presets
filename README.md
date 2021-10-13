@@ -24,11 +24,11 @@ Dependencies:
 - eslint-plugin-react-hooks
 
 ```bash
-npm install --save-dev @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.22.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
+npm install --save-dev @megafon/frontend-presets @typescript-eslint/eslint-plugin@^4.33.0 @typescript-eslint/parser@^4.33.0 eslint@^7.32.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.3.0 eslint-plugin-import@^2.24.2 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^4.0.0 eslint-plugin-react@^7.26.1 eslint-plugin-react-hooks@^4.2.0 prettier@^2.4.1 stylelint@^13.13.1 stylelint-order@^4.1.0
 ```
 
 ```bash
-yarn add -D @megafon/frontend-presets eslint@^7.24.0 prettier@^2.2.1 @typescript-eslint/eslint-plugin@^4.21.0 @typescript-eslint/parser@^4.22.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^3.4.0 eslint-plugin-react@^7.23.2 eslint-plugin-react-hooks@^4.2.0 stylelint@^13.12.0 stylelint-order@^4.1.0
+yarn add -D @megafon/frontend-presets @typescript-eslint/eslint-plugin@^4.33.0 @typescript-eslint/parser@^4.33.0 eslint@^7.32.0 eslint-config-airbnb@^18.2.1 eslint-config-prettier@^8.3.0 eslint-plugin-import@^2.24.2 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-prettier@^4.0.0 eslint-plugin-react@^7.26.1 eslint-plugin-react-hooks@^4.2.0 prettier@^2.4.1 stylelint@^13.13.1 stylelint-order@^4.1.0
 ```
 
 ## eslint
