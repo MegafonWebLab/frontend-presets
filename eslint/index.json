@@ -86,12 +86,6 @@
         ]
       }
     ],
-    "import/no-cycle": [
-      "error",
-      {
-        "ignoreExternal": true
-      }
-    ],
     "import/no-useless-path-segments": [
       "error",
       {
