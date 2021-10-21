@@ -86,6 +86,7 @@
         ]
       }
     ],
+    "import/no-cycle": ["off"],
     "import/no-useless-path-segments": [
       "error",
       {
