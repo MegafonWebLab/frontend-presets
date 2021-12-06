@@ -135,6 +135,7 @@
         {
           "groupName": "Positioning",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "content",
             "position",
@@ -148,6 +149,7 @@
         {
           "groupName": "Box Model",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "display",
             "flex",
@@ -245,6 +247,7 @@
         {
           "groupName": "Typography",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "color",
             "font",
@@ -308,6 +311,7 @@
         {
           "groupName": "Visual",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "list-style",
             "list-style-position",
@@ -353,6 +357,7 @@
         {
           "groupName": "Animation",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "transition",
             "transition-delay",
@@ -373,6 +378,7 @@
         {
           "groupName": "Misc",
           "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
           "properties": [
             "appearance",
             "clip",
