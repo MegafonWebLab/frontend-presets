@@ -106,18 +106,6 @@ module.exports = {
 };
 ```
 
-## Release
-
-There are multiple commands to make a release:
-
-```bash
-yarn release --patch
-yarn release --minor
-yarn release --major
-```
-
-After executing it, a new tag is created. When it's pushed, `Github Actions` will publish a new package to npm automatically.
-
 ## Contributing
 
 Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
